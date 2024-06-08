@@ -12,39 +12,33 @@ This project is a Flask-based API that uses a pre-trained GPT-2 model to finesse
 
 ### Prerequisites
 
-Make sure you have Python 3.7+ installed. You'll also need `pip` to install the required packages.
+Make sure you have Docker and Docker Compose installed on your machine.
 
 ### Installation
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/Mutai-Gilbert/llm_tool.git
+    git clone https://github.com/your-username/llm_tool.git
     cd llm_tool
     ```
 
-2. **Create and activate a virtual environment**:
+### Running the Application with Docker
+
+1. **Build the Docker image**:
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    docker-compose build
     ```
 
-3. **Install the dependencies**:
+2. **Start the application**:
     ```bash
-    pip install -r requirements.txt
+    docker-compose up
     ```
 
-### Running the Application
-
-1. **Start the Flask application**:
-    ```bash
-    python app.py
-    ```
-
-2. The API will be available at `http://127.0.0.1:5000/finesse`.
+3. The API will be available at `http://localhost:5000/finesse`.
 
 ### Usage
 
 Send a POST request to the `/finesse` endpoint with a JSON payload containing your prompt. For example:
 
 ```bash
-curl -X POST http://127.0.0.1:5000/finesse -H "Content-Type: application/json" -d '{"prompt": "Once upon a time"}'
+curl -X POST http://localhost:5000/finesse -H "Content-Type: application/json" -d '{"prompt": "Once upon a time"}'
