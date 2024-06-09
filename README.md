@@ -1,12 +1,6 @@
-# LLM Tool: Finesse Your Prompts with AI
+# Existing API with LLM Tool Integration
 
-This project is a Flask-based API that uses a pre-trained GPT-2 model to finesse and enhance text prompts. The API accepts a prompt via a POST request and returns a more refined version of the text using the power of large language models (LLMs).
-
-## Features
-
-- **Prompt Finessing**: Enhance your text prompts using a pre-trained GPT-2 model.
-- **Easy Integration**: Simple REST API for seamless integration with other applications.
-- **Scalable**: Can be deployed on various platforms such as AWS, GCP, or Heroku.
+This project is a Flask-based API with an integrated LLM tool that uses a pre-trained GPT-2 model to finesse and enhance text prompts. The API accepts a prompt via a POST request and returns a more refined version of the text using the power of large language models (LLMs).
 
 ## Getting Started
 
@@ -18,8 +12,8 @@ Make sure you have Docker and Docker Compose installed on your machine.
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/llm_tool.git
-    cd llm_tool
+    git clone https://github.com/your-username/existing_api.git
+    cd existing_api
     ```
 
 ### Running the Application with Docker
